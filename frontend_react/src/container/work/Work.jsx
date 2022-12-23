@@ -22,7 +22,22 @@ function Work() {
     });
   }, []);
 
-  const workFilterHandler = (item) => {};
+  const workFilterHandler = (item) => {
+    setActiveFilter(item);
+    setAnimateCard([{ y: 100, opacity: 0 }]);
+
+    setTimeout(() => {
+      setAnimateCard([{ y: 0, opacity: 1 }]);
+
+      if (item === "All") {
+        setFilterWork(works);
+      } else {
+        setFilterWork(works.filter((work) => work.tags.includes(item)));
+      }
+    }, 500);
+  };
+
+  console.log(works);
 
   return (
     <>
@@ -31,19 +46,17 @@ function Work() {
       </h2>
 
       <div className="app__work-filter">
-        {["UI/UX", "Web App", "Mobile App", "React JS", "All"].map(
-          (item, index) => (
-            <div
-              key={index}
-              className={`app__work-filter-item app__flex p-text ${
-                activeFilter === item ? "item-active" : ""
-              }`}
-              onClick={() => workFilterHandler(item)}
-            >
-              {item}
-            </div>
-          )
-        )}
+        {["All", "Web App", "Angular", "React JS"].map((item, index) => (
+          <div
+            key={index}
+            className={`app__work-filter-item app__flex p-text ${
+              activeFilter === item ? "item-active" : ""
+            }`}
+            onClick={() => workFilterHandler(item)}
+          >
+            {item}
+          </div>
+        ))}
       </div>
 
       <motion.div
@@ -97,7 +110,7 @@ function Work() {
               </p>
 
               <div className="app__work-tag app__flex">
-                <p className="p-text"> {work.tags[0]} </p>
+                <p className="p-text"> {work.tags && work.tags[0]} </p>
               </div>
             </div>
           </div>
