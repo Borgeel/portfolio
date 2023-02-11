@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavigationDots, SocialMedia } from "../components";
 
 const AppWrap = (Component, idName, classNames) =>
@@ -10,8 +10,14 @@ const AppWrap = (Component, idName, classNames) =>
           <Component />
 
           <div className="copyright">
-            <p className="p-text">@2020 IRFAN</p>
-            <p className="p-text">All rights reserved</p>
+            <p className="p-text">@2024 All jobs reserved</p>
+            <p className="p-text">Make Bake Great Again</p>
+            <p className="p-text">
+              Narod Zna
+              <br />
+              <span style={{ color: "green", fontSize: 18 }}>SD</span>
+              <span style={{ color: "red", fontSize: 18 }}>A </span>
+            </p>
           </div>
         </div>
         <NavigationDots active={idName} />
