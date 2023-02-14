@@ -17,7 +17,7 @@ function Work() {
     const query = "*[_type == 'works']";
 
     client.fetch(query).then((data) => {
-      setWorks(data);
+      setWorks(data.reverse());
       setFilterWork(data);
     });
   }, []);
@@ -44,7 +44,14 @@ function Work() {
       </h2>
 
       <div className="app__work-filter">
-        {["All", "Web App", "Angular", "React JS"].map((item, index) => (
+        {[
+          "All",
+          "Angular",
+          "React JS",
+          "Next JS",
+          "Backend Included",
+          "Deployed",
+        ].map((item, index) => (
           <div
             key={index}
             className={`app__work-filter-item app__flex p-text ${

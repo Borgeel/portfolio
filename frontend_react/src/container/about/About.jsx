@@ -11,7 +11,7 @@ function About() {
   useEffect(() => {
     const query = '*[_type == "abouts" ]';
 
-    client.fetch(query).then((data) => setAbouts(data));
+    client.fetch(query).then((data) => setAbouts(data.reverse()));
   }, []);
 
   return (

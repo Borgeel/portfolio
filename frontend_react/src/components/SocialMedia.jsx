@@ -4,15 +4,15 @@ import { BsFacebook, BsGithub, BsMailbox } from "react-icons/bs";
 const SocialMedia = () => {
   return (
     <div className="app__social">
-      <div>
+      <a href="https://www.facebook.com/irfan.cesir/">
         <BsFacebook />
-      </div>
-      <div>
+      </a>
+      <a href="https://github.com/Borgeel">
         <BsGithub />
-      </div>
-      <div>
+      </a>
+      <a onClick={() => (window.location = "mailto:irfancesir93@gmail.com")}>
         <BsMailbox />
-      </div>
+      </a>
     </div>
   );
 };

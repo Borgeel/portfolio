@@ -51,14 +51,14 @@ function Footer() {
       <div className="app__footer-cards">
         <div className="app__footer-card ">
           <img src={images.email} alt="email" />
-          <a href="mailto:hello@micael.com" className="p-text">
-            hello@micael.com
+          <a href="mailto:irfancesir93@gmail.com" className="p-text">
+            irfancesir93@gmail.com
           </a>
         </div>
         <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
-          <a href="tel:+1 (123) 456-7890" className="p-text">
-            +1 (123) 456-7890
+          <a href="tel:+387 60 341 83 16" className="p-text">
+            +387 60 341 83 16
           </a>
         </div>
       </div>

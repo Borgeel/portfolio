@@ -30,6 +30,9 @@ import dotnet from "../assets/dotnet.png";
 import tailwind from "../assets/tailwind.png";
 import bootstrap from "../assets/bootstrap.png";
 
+import mobile from "../assets/mobile.png";
+import email from "../assets/email.png";
+
 export default {
   dotnet,
   bootstrap,
@@ -58,4 +61,6 @@ export default {
   nb,
   angular,
   c,
+  mobile,
+  email,
 };

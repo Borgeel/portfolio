@@ -48,12 +48,13 @@
   align-items: center;
 
   .app__work-item {
-    width: 270px;
+    width: 350px;
+    min-height: 420px;
     flex-direction: column;
-
     margin: 2rem;
     padding: 1rem;
     border-radius: 0.5rem;
+
     background-color: #fff;
     color: #000;
 
@@ -86,6 +87,7 @@
   img {
     width: 100%;
     height: 100%;
+
     border-radius: 0.5rem;
     object-fit: cover;
   }
