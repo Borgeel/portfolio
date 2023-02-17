@@ -17,7 +17,7 @@ import profile from "../assets/profile.jpg";
 import circle from "../assets/circle.svg";
 
 import angular from "../assets/angular.png";
-import c from "../assets/c#.png";
+import c from "../assets/csharp.png";
 import dotnet from "../assets/dotnet.png";
 import tailwind from "../assets/tailwind.png";
 import bootstrap from "../assets/bootstrap.png";
