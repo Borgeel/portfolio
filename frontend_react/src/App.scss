@@ -103,6 +103,10 @@
   align-items: center;
   flex-direction: column;
 
+  position: fixed;
+  left: 0;
+  bottom: 0;
+
   padding: 1rem;
 
   a {
@@ -153,6 +157,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  position: fixed;
+  top: 38%;
+  right: 0;
 
   padding: 1rem;
 
