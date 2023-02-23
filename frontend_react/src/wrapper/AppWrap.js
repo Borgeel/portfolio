@@ -1,4 +1,6 @@
+import { useRef } from "react";
 import { NavigationDots, SocialMedia } from "../components";
+import { useIsVisible } from "../lib/useIsVisible";
 
 const AppWrap = (Component, idName, classNames) =>
   function HOC() {
@@ -20,7 +22,7 @@ const AppWrap = (Component, idName, classNames) =>
           </div>
         </div>
 
-        <NavigationDots />
+        <NavigationDots active={idName} />
       </div>
     );
   };
