@@ -11,14 +11,14 @@ const AppWrap = (Component, idName, classNames) =>
           <Component />
 
           <div className="copyright">
-            <p className="p-text">@2024 All jobs reserved</p>
+            <p className="p-text">@2023 All jobs reserved</p>
             <p className="p-text">Make Bake Great Again</p>
-            <p className="p-text">
+            {/* <p className="p-text">
               Narod Zna
               <br />
               <span style={{ color: "green", fontSize: 18 }}>SD</span>
               <span style={{ color: "red", fontSize: 18 }}>A </span>
-            </p>
+            </p> */}
           </div>
         </div>
 
